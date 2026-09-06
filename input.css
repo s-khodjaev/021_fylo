@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors */
+  --color-dark-blue: hsl(217, 28%, 15%);
+  --color-dark-blue1: hsl(218, 28%, 13%);
+  --color-dark-blue2: hsl(216, 53%, 9%);
+  --color-dark-blue3: hsl(219, 30%, 18%);
+  --color-accent-cyan: hsl(176, 68%, 64%);
+  --color-accent-blue: hsl(198, 60%, 50%);
+  --color-light-red: hsl(0, 100%, 63%);
+
+  /* Font Family */
+  --font-sans: "Raleway", sans-serif;
+  --font-opensans: "Open Sans", sans-serif;
+
+  /* Background Image */
+  --background-image-logo-dark-mode: url("../img/logo-dark-mode.svg");
+  --background-image-logo-light-mode: url("../img/logo-light-mode.svg");
+  --background-image-curvy-dark-mode: url("../img/bg-curvy-dark-mode.svg");
+  --background-image-curvy-light-mode: url("../img/bg-curvy-light-mode.svg");
+}
